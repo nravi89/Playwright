@@ -13,7 +13,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-
+/**
+ * author: ravi narayan
+ * version: 1.0
+ * purpose: generic csv reader
+ * description: single method will work with all csv data provider test case methods
+ * test case method arguments numbers and type must match with csv data
+ */
 public class CSVDataProvider {
 
     @DataProvider(name="csvReader")
