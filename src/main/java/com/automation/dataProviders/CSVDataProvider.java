@@ -1,3 +1,11 @@
+/**
+ * author: ravi narayan
+ * version: 1.0
+ * purpose: generic csv reader and csv test data provider
+ * description: Single method will work with all csv data provider test case methods.
+ * Test case method arguments (numbers, order and type) must match with each csv row data
+ */
+
 package com.automation.dataProviders;
 
 import com.automation.annotations.DataProviderFilePath;
@@ -13,13 +21,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-/**
- * author: ravi narayan
- * version: 1.0
- * purpose: generic csv reader and csv test data provider
- * description: Single method will work with all csv data provider test case methods.
- * Test case method arguments (numbers, order and type) must match with each csv row data
- */
+
 public class CSVDataProvider {
 
     @DataProvider(name="csvReader")
