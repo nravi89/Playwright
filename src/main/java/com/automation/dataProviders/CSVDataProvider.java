@@ -1,9 +1,10 @@
 /**
- * author: ravi narayan
- * version: 1.0
- * purpose: generic csv reader and csv test data provider
- * description: Single method will work with all csv data provider test case methods.
- * Test case method arguments (numbers, order and type) must match with each csv row data
+ * generic csv reader and csv test data provider
+ * <p>Single method will work with all csv data provider test case methods.
+ * Test case method arguments (numbers, order and type) must match with each csv row data.
+ *
+ * @author Ravi Narayan
+ * @version: 1.0
  */
 
 package com.automation.dataProviders;

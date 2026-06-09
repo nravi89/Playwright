@@ -9,10 +9,15 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 @Slf4j
 public class BaseTest {
 
     protected BrowserContext context;
+
+    protected static Map<String, Object> map = new ConcurrentHashMap<>();
 
     @BeforeClass(alwaysRun=true)
     public void setup(){
@@ -28,8 +33,11 @@ public class BaseTest {
     @AfterClass(alwaysRun=true)
     public void tearDown(){
         log.debug("tearDown called");
+
+        if(this.context==null)
+            return;
+
         this.context.close();
-        BrowserProvider.down();
     }
 
 }

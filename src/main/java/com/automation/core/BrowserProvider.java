@@ -33,7 +33,7 @@ public class BrowserProvider {
     }
 
     public static void down() {
-        playwright.close();
+        //playwright.close();
     }
 
 
